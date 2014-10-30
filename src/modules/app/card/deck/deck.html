@@ -1,0 +1,12 @@
+<div class="snapClass" snap-drawer="left">
+    <h6 id="cardsTitle">Cards</h6>
+    <ul id="cardList" layout="vertical">
+        <li flex class="cardWrapper" ng-repeat="card in deckCtrl.deck.items">
+            <card-item flex id="card.getId()" class="card" ng-click="deckCtrl.setCard(card.getId())" title="Click me to animate!" message="cliquei no card" event="click">
+                <!-- card image should be here -->
+                <!-- card directives to manipulate it should also be here -->
+            </card-item>
+        </li>
+        <li class="cardWrapper cardSlot"></li>
+    </ul>
+</div>

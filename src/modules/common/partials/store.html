@@ -1,0 +1,83 @@
+<snap-drawers>
+
+  <deck></deck>
+
+  <friends></friends>
+
+</snap-drawers>
+
+<snap-content>
+  <div layout="vertical" layout-fill tabindex="-1" role="main" class="doc-content">
+    <material-toolbar hide block-lg block-md>
+      <div id="header" class="navbar" role="navigation">
+        <div id="player-header" class="material-toolbar-tools" layout="horizontal" layout-padding  layout-align="space-between">
+          <div flex  flex-lg="10" flex-md="10" flex-sm="10" style="height: 70px;"  layout-order-md="1" layout="horizontal" layout-align="start" >
+            <a class="logo" ui-sref="store.main" title="Pagapo.co"></a>
+          </div>
+          <div flex="50" layout="horizontal" layout-order-md="2"><search-block></search-block></div><div flex="35" layout="horizontal" layout-align="end" layout-order-md="3"><player-button></player-button><mini-basket></mini-basket></div>
+        </div>
+        <div class="colorbar"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="bar4"></span><span class="bar5"></span></div>
+      </div>
+    </material-toolbar>
+
+    <material-content flex class="material-content-padding" id="content">
+      <filter-block></filter-block>
+      <!-- Alert message system -->
+      <toaster-container toaster-options="{'position-class': 'toast-top-full-width', 'close-button' : 'true'}"></toaster-container>
+      <!-- all logic is handled by the module angular-onyx-store -->
+      <ui-view name="mainView"></ui-view>
+    </material-content>
+
+    <material-toolbar hide-md hide-lg block-sm class="mobileToolbar">
+      <div id='mobileHeader' class="md-whiteframe-z1" layout="horizontal" layout-padding  layout-align="space-between">
+        <div flex>
+          <a class="logoMobile" ui-sref="store.main" title="Pagapo.co"></a>
+        </div>
+      </div>
+      <div class="colorbar"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="bar4"></span><span class="bar5"></span></div>
+    </material-toolbar>
+
+    <material-toolbar class="footerToolbar" hide block-lg block-md>
+      <snap-dragger>
+        <div flex id="footer" layout="horizontal" layout-align="center">
+          <div class="container-fluid">
+            <div id="player-console">
+              <div style='overflow:hidden;padding-top: 1px;'>
+                <badge-button></badge-button><wishlist-button></wishlist-button><score-button></score-button><deck-button></deck-button><friend-button></friend-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </snap-dragger>
+
+    </material-toolbar>
+
+    <snap-dragger>
+
+      <material-toolbar id="mobileBar" hide-md hide-lg block-sm>
+        <div flex="100" layout="horizontal" layout-padding layout-align="center">
+
+          <div flex layout-order-md="1">
+            <i class="fa fa-trophy"></i>
+          </div>
+
+          <a flex layout-order-md="2" ng-click="wishlistCtrl.toggleWishlist()" ng-class="{active : wishlistCtrl.isActive()}">
+
+            <i class="fa fa-heart"></i>
+          </a>
+
+          <a flex layout-order-md="3" snap-toggle="left" ng-class="{active : deckButtonCtrl.active}">
+            <i class="fa fa-stack-overflow"></i>
+          </a>
+
+          <a flex layout-order-md="4" snap-toggle="right" ng-class="{active : friendButtonCtrl.active}">
+            <i class="fa fa-users"></i>
+          </a>
+
+        </div>
+      </material-toolbar>
+    </snap-dragger>
+
+
+  </div>
+</snap-content>

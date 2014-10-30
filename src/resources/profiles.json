@@ -1,0 +1,9 @@
+{
+    "profiles" : [
+        { "id" : 1, "playerId" : 1, "name" : "Fabio", "lastname" : "Zaffani", "age" : "28", "cpf": "344.539.098-37", "addresses" : [1, 2] },
+        { "id" : 2, "playerId" : 2, "name" : "Gabriel", "lastname" : "Husek", "age" : "24", "cpf" : "024.890.198-21", "addresses" : [3] },
+        { "id" : 3, "playerId" : 3, "name" : "Ana Paula", "lastname" : "Denardi", "age" : "39", "cpf" : "024.890.198-21", "addresses" : [4] },
+        { "id" : 4, "playerId" : 4, "name" : "Ricardo", "lastname" : "De Rosa", "age" : "42", "cpf" : "024.890.198-21", "addresses" : [5] },
+        { "id" : 5, "playerId" : 5, "name" : "Paulo", "lastname" : "Zaffani", "age" : "54", "cpf" : "024.890.198-21", "addresses" : [6] }
+    ]
+}

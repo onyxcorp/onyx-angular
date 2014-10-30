@@ -1,0 +1,23 @@
+<div id="friend-block" class="snapClass" snap-drawer="right">
+    <h1 class="friendsTitle">Meus Amigos</h1>
+    <ul class="friendsUL">
+        <li class="friendsLi" ng-repeat="friend in friendsCtrl.friends">
+            <span ng-if='$first' class="crown"></span>
+            <img class="friendsImg" src="http://astrobioloblog.files.wordpress.com/2011/10/duck-1.jpg">
+            <span class="friendsLvl"><span class="fLvl">lvl</span>10</span>
+            <span class="friendsName">{{friend.getName()}}</span>
+            <span class="friendProfit">Rendeu {{friend.getPoints() | currency: "R$ "}}</span>
+            <span class="friendsBadge"></span>
+        </li>
+    </ul>
+    <h1 class="friendsTitle">Amigos Sumidos :(</h1>
+    <ul class="friendsUL">
+        <li class="friendsLi">
+            <img class="friendsImg" src="http://astrobioloblog.files.wordpress.com/2011/10/duck-1.jpg">
+            <span class="friendsLvl"><span class="fLvl">lvl</span>10</span>
+            <span class="friendsName">Fulano</span>
+            <span class="friendsGone">Sumiu em 22/12</span>
+            <a ng-click="friend.sendMessage()" title="Envie uma Mensagem" class="friendMsg"></a>
+        </li>
+    </ul>
+</div>

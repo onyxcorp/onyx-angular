@@ -1,0 +1,11 @@
+{
+  "generator-angulpify": {
+    "projectName": "angu",
+    "coffee": false,
+    "jade": false,
+    "sass": false,
+    "bootstrap": true,
+    "uiBootstrap": true,
+    "uiRouter": false
+  }
+}

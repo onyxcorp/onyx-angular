@@ -1,0 +1,38 @@
+<div flex="20" layout="horizontal" style='min-width: 119px;' layout-align="start" >
+    <!--<div class='carrinhoTop'>-->
+        <!--<p id="descontoTop">-->
+            <!--<span ng-if="card">-->
+                <!--{{miniBasketCtrl.card.getDiscount()}}%-->
+            <!--</span>-->
+            <!--<span ng-if="!card">-->
+                <!--0%-->
+            <!--</span>-->
+
+        <!--</p>-->
+
+        <!--<a id="cartTitle" ui-sref="order.close">Carrinho</a>-->
+        <!--<span id="moarEcono">Economize mais!</span>-->
+        <!--<span id="qtyCart" ng-bind="miniBasketCtrl.itemsQty()"></span>-->
+
+    <!--</div>-->
+<div class="cardDiv">
+    <p id="descontoTop">
+            <span ng-if="card">
+                {{miniBasketCtrl.card.getDiscount()}}%
+            </span>
+            <span ng-if="!card">
+                0%
+            </span>
+
+    </p>
+
+
+</div>
+    <a ui-sref="order.close">
+    <div class="cartDiv">
+        <span class="cartIcon"><i class="fa fa-shopping-cart"></i></span>
+        <span id="qtyCart" ng-bind="miniBasketCtrl.itemsQty()"></span>
+    </div>
+
+</a>
+</div>

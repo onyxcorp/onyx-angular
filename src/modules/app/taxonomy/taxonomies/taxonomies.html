@@ -1,0 +1,26 @@
+<material-content style="overflow: hidden!important;padding-top: 26px;" layout="horizontal" layout-align="center" >
+
+    <h1 class="cath1">Categorias</h1>
+    <div masonry column-width='125' flex="50">
+        <material-button flex
+                         class="{{category.getSlug()}} catLi masonry-brick"
+                         ng-repeat="category in taxonomiesCtrl.filters.items.category"
+                         ng-click="category.toggleSelect()"
+                         ng-class="{active : category.getSelected()}">
+            <a class='catName' ng-bind="category.getName()"></a>
+        </material-button>
+    </div>
+</material-content>
+<material-content style="overflow: hidden!important;" layout="horizontal" layout-align="center" >
+
+    <h1 class="cath1">Especificações</h1>
+    <div flex="50" class="tagDiv">
+        <material-button flex
+                         class="{{tag.getSlug()}} tagLi"
+                         ng-repeat="tag in taxonomiesCtrl.filters.items.tag"
+                         ng-click="tag.toggleSelect()"
+                         ng-class="{active : tag.getSelected()}">
+            <a ng-bind="'#' + tag.getName()"></a>
+        </material-button>
+    </div>
+</material-content>

@@ -1,0 +1,88 @@
+<div layout="horizontal">
+
+    <div flex class="alert alert-warning" role="alert" ng-if="orderResumeCtrl.quantity === 0">
+        Seu carrinho esta vazio
+    </div>
+
+    <div flex="66" ng-if="orderResumeCtrl.quantity > 0">
+        <h1>Fechando a Compra =D</h1>
+
+        <ul class="resumeUL">
+
+            <li class="resumeLi" ng-repeat="product in orderResumeCtrl.products track by $index">
+
+                <product-item id="product.getId()">
+                    <div layout="horizontal" layout-padding>
+                        <div flex="15">
+                            <product-item-image class="resumeImg"></product-item-image>
+                        </div>
+                        <div flex>
+                            <!--<a ng-click="removeItem(item.getId())" class="glyphicon glyphicon-remove"></a>-->
+                            <span class="resumeName" product-bind="title"></span>    <a ng-click="" > <div class="resumeDel">X</div></a>
+
+                      <div layout="horizontal" layout-padding>
+                            <p flex class="resumeDesconto"><span product-bind="initial_discount" filter="number:0"></span>%</p>
+                            <div flex class="pricesBox">
+                                <span class="resumeOldPrice">de <span product-bind="original_price" filter="currency:R$ "></span></span>
+                                <span class="resumePrice" product-bind="price" filter="currency:R$ "></span>
+                            </div>
+                            <div flex class="resumeProductTotal">
+                                <span class="resumeProductTotalName">Subtotal:</span>
+                                {{ item.getTotal() | currency : "R$ "}}
+                            </div>
+                            <div class="resumeQty">
+                                <span class="resumeQtyNumber" product-bind="quantity" filter="number"></span>
+                            <div class="resumeControls">
+
+                                    <a  ng-click="item.setQuantity(-1, true)"><div class="resumeMinus" ng-class="{'disabled':item.getQuantity()==1}">-</div></a>
+
+                                    <a  ng-click="item.setQuantity(1, true)"><div class="resumePlus">+</div></a>
+                                </div>
+                            </div>
+                      </div>
+
+                            <span class="resumeVal">Vencimento em 01/12/14</span>
+                        </div>
+                    </div>
+                </product-item>
+
+            </li>
+
+        </ul>
+
+    </div>
+<div flex="33" layout="vertical" style="margin-left: 10px;margin-top:65px;">
+    <div flex id="resumeSidebar1">
+        <div id="resumeAddress">
+            <span class="sidebarTitle">Endereço da Entrega:</span>
+            <a class="sidebarLink">Minha Casa</a>
+            <span id="resumePrazo">(Entrega em até 5 dias utéis)</span>
+        </div>
+        <div id="resumePay">
+            <span class="sidebarTitle">Forma de Pagamento:</span>
+            <a class="sidebarLink">Visa (1234) - 12x sem Juros.</a>
+        </div>
+    </div>
+
+    <div flex id="resumeSidebar2">
+        <span class="sidebarTitle" id="subtotal">Subtotal:  </span><span id="resumeSubtotal">R$ 249,99</span>
+        <div  layout="horizontal" class="continha">
+            <span flex class="subtotalDesconto">10%</span><span flex class="subtotalPrice">R$ 211,80 {{ ngCart.totalCost() | currency }}</span>
+        </div>
+        <div layout="horizontal" class="continha2">
+            <span flex id="frete"></span><span flex class="subtotalFrete">R$ 11,90</span>
+        </div>
+        <div class="row continha3">
+            <span class="precoFinal">R$ 211,80</span>
+
+                <span id="cardRecomendado" class="sidebarTitle">
+                    Card Recomendado:
+                    <img class="recomendado" src="/public/assets/card1.png">
+                </span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+

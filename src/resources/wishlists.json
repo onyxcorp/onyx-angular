@@ -1,0 +1,6 @@
+{
+    "wishlists" : [
+        { "id" : 1, "player_id": 1, "product_id" : [27, 357, 360, 396] },
+        { "id" : 2, "player_id": 2, "product_id" : [27, 278, 396] }
+    ]
+}

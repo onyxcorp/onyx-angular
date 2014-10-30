@@ -1,0 +1,702 @@
+@-webkit-keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+.ngdialog.ngdialog-theme-default {
+  padding-bottom: 160px;
+  padding-top: 160px;
+}
+
+.ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
+  -webkit-animation: ngdialog-flyout .5s;
+  animation: ngdialog-flyout .5s;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+  -webkit-animation: ngdialog-flyin .5s;
+  animation: ngdialog-flyin .5s;
+  background: #f0f0f0;
+  border-radius: 5px;
+  color: #444;
+  font-family: 'Helvetica',sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1em;
+  position: relative;
+  width: 450px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close {
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+  background: transparent;
+  border-radius: 3px;
+  color: #bbb;
+  content: '\00D7';
+  font-size: 26px;
+  font-weight: 400;
+  height: 30px;
+  line-height: 26px;
+  position: absolute;
+  right: 3px;
+  text-align: center;
+  top: 3px;
+  width: 30px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:hover:before,
+.ngdialog.ngdialog-theme-default .ngdialog-close:active:before {
+  color: #777;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-message {
+  margin-bottom: .5em;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input {
+  margin-bottom: 1em;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"] {
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0 0 .25em;
+  min-height: 2.5em;
+  padding: .25em .67em;
+  width: 100%;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"]:focus {
+  -webkit-box-shadow: inset 0 0 0 2px #8dbdf1;
+  box-shadow: inset 0 0 0 2px #8dbdf1;
+  outline: none;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons {
+  *zoom: 1;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button {
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+  font-family: inherit;
+  font-size: .8em;
+  letter-spacing: .1em;
+  line-height: 1em;
+  margin: 0 0 0 .5em;
+  padding: .75em 2em;
+  text-transform: uppercase;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+  -webkit-animation: ngdialog-pulse 1.1s infinite;
+  animation: ngdialog-pulse 1.1s infinite;
+  outline: none;
+}
+
+@media (max-width: 568px) {
+  .ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-primary {
+  background: #3288e6;
+  color: #fff;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-secondary {
+  background: #e0e0e0;
+  color: #777;
+}
+
+/**
+ Withut a width and height, angular chart will not work
+ */
+#chart {
+  height: 400px;
+  width: 600px;
+}
+
+
+
+h1 {
+  font-size: 3.8em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.65em!important;
+}
+
+h4 {
+  font-size: 2.9em;
+}
+
+h5 {
+  font-size: 2.6em;
+}
+
+h6 {
+  font-size: 2.3em;
+}
+
+a,
+a.link
+a:visited {
+  cursor: pointer;
+}
+
+/**
+  * GRID
+  **/
+
+.grid {
+  margin-top: 0;
+}
+//
+//  .deckgrid[deckgrid]::before {
+//    /* Specifies that the grid should have a maximum of 4 columns. Each column will have the classes 'column' and 'column-1-4' */
+//    content: '7 .column.column-1-7';
+//    font-size: 0; /* See https://github.com/akoenig/angular-deckgrid/issues/14#issuecomment-35728861 */
+//    visibility: hidden;
+//  }
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, .15);
+  position: absolute;
+  border-radius: 0;
+  background: #fff;
+  margin: 7.5px;
+}
+
+.grid-content {
+  min-height: 60px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 240px) {
+  .grid-item {
+    width: 100%; // need 1 box
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .grid-item {
+    width: 47%;  // need 2 boxes
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .grid-item {
+    width: 31.5%;  // need 3 boxes
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-item {
+    width: 23.4%;  // need 4 boxes
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .grid-item {
+    width: 18.8%; // need 5 boxes
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .grid-item {
+    width: 15.65%; // need 6 boxes
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .grid-item {
+    width: 13.4%; // need 7 boxes
+  }
+}
+
+
+/** Products Layout **/
+
+.butboxes{
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  height: 75px;
+}
+
+.leftbut,
+.rightbut{
+  display: block;
+  float: left;
+  width: 50%;
+
+  height:100%;
+}
+
+.leftbut {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.rightbut{
+  float: right;
+  color: #858585;
+  text-align: center;
+  font-size: 7em;
+}
+
+.active,
+.leftbut:active,
+.rightbut:active{
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.butwish{
+  text-align: center;
+  background-image: url("/assets/icons/wish-off.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: block;
+  width: 42px;
+  height: 45px;
+  margin-top: 20px;
+  background-size: 40px;
+}
+
+.leftbut.active .butwish{
+  background-image: url("/assets/icons/wish-on.png")!important;
+}
+
+.rightbut.active{
+  color: #6f8e3b;
+}
+
+.butadd{
+  text-align: center;
+  background-image: url("/assets/icons/add-off.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: block;
+  width: 42px;
+  height: 53px;
+  margin-top: 20px;
+  background-size: 40px;
+}
+.rightbut.active .butadd{
+  text-align: center;
+  background-image: url("/assets/icons/add-on.png")!important;
+}
+
+
+.productTitle{
+  color:#59485d;
+}
+
+.percentualDesconto{
+  display: inline-block;
+  width: 74px;
+  height: 64px;
+  color: #fff;
+  background: #98c03d;
+  font-size: 4.3em;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.prices{
+  display: inline-block;
+  margin-top: 10px;
+  position: absolute;
+}
+
+
+.price{
+  color:#3b2e3f;
+  font-size: 5em;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+
+.oldPrice{
+  color:#625f62;
+  font-size: 2.3em;
+  line-height: 1px;
+}
+
+/*
+* Chartist graph
+*/
+
+#my-chart .ct-label{fill:#94878a;font-size:.75rem}
+#my-chart .ct-grid{stroke:#53494b;stroke-width:1px;stroke-dasharray:3px}
+#my-chart .ct-point{stroke-width:10px;stroke-linecap:round}
+#my-chart .ct-line{fill:none;stroke-width:4px}
+#my-chart .ct-series.ct-series-a .ct-line,
+#my-chart .ct-series.ct-series-a .ct-point{
+  stroke:#d70206
+}
+#my-chart .ct-series.ct-series-b .ct-line,
+#my-chart .ct-series.ct-series-b .ct-point{
+  stroke:#F05B4F
+}
+#my-chart .ct-series.ct-series-c .ct-line,
+#my-chart .ct-series.ct-series-c .ct-point{
+  stroke:#F4C63D
+}
+
+#my-chart .ct-series.ct-series-a .ct-point{
+  stroke-width:10px;stroke-linecap:square}
+
+#my-chart .ct-series.ct-series-a .ct-line{
+  fill:none;
+  stroke-width:4px;
+  stroke-dasharray:5px;
+  -webkit-animation:dashoffset 1s linear infinite;
+  -moz-animation:dashoffset 1s linear infinite;
+  -o-animation:dashoffset 1s linear infinite;
+  animation:dashoffset 1s linear infinite
+}
+
+
+//ProductInternal
+
+.productName{
+  ont-size: 5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px
+}
+
+.productImg{
+  max-width: 300px;
+  display:inline-block;
+  margin: 0 auto;
+}
+
+.productChart{
+  display:inline-block!important;
+  max-width:500px;
+  margin-left: 20px;
+}
+
+
+#productInfo{
+  color: white;
+  background:#63c9d9;
+  width: 150px;
+  max-height: 30px;
+  font-size: 2em;
+  text-align:center;
+  display:inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#productInfoIcon{
+  background: url("/assets/icons/info.png") #1bb0bf;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align:center;
+  width: 30px;
+  height: 30px;
+  background-size: 4px;
+  display:inline-block;
+  margin-right: 5px;
+  float: left;
+
+}
+
+#productInfoText{
+  display: inline-block;
+  margin-right: 5px;
+  line-height: 8px;
+}
+
+#productDate{
+  background: white;
+  border: 1px solid #d6d6d6;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 150px;
+  height: 26px;
+  font-size: 14px;
+  color: #e51f4d;
+}
+
+.productTags{
+  color: #8a8b80;
+  font-size: 2em;
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display:block;
+}
+
+.productWish{
+  background-image: url("/assets/icons/wish-off.png");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 35px;
+  margin-top: 10px;
+  background-size: 30px;
+  margin-left: 10px;
+  display:block;
+  float:left;
+}
+
+.productWishLink.active .productWish{
+  background-image: url("/assets/icons/wish-on.png")!important;
+  margin-left: 10px;
+}
+
+.productWishNumber{
+  color:#828080;
+  display: inline-block;
+  font-size: 2.5em;
+  margin-left: 11px;
+  line-height: 47px;;
+}
+
+.productWishLink.active .productWishNumber{
+  color:#e51f4d
+}
+
+
+.productDesconto{
+  max-width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #98c03d;
+  font-size: 7em;
+  text-align: center;
+  line-height: 101px;
+  margin-top: 20px;
+  left: 36px;
+}
+
+.productPrices{
+  display:inline-block;
+  margin-left: 10px;
+  margin-top: 38px;
+}
+
+.productOldPrice{
+  color: #625f62;
+  font-size: 3.5em;
+  line-height: 61px;
+  margin-top: -30px;
+  margin-left: 4px;
+}
+
+.productPrice{
+  color: #3b2e3f;
+  font-size: 10em;
+  font-weight: 800;
+  margin-top: -9px;
+}
+
+
+.productQty{
+  float: left;
+  background: #438bab;
+  width: 90px;
+  height: 90px;
+  color: white;
+  margin-right: -1px;
+  font-size: 8.3em;
+  text-align: center;
+}
+
+.productQtyNumber{
+  display:inline-block;
+  line-height: 60px;
+  margin-bottom: 11px;
+}
+
+.productControls{
+  border-top: 1px solid white;
+  position: relative;
+  margin-top: -9px;
+  line-height: 6px;
+  width: 100%;
+}
+
+.productRow{
+  border-right:1px solid white;
+  height: 25px;
+
+}
+
+.productMinus{
+  float: left;
+  border-right: 1px solid white!important;
+  height: 25px;
+}
+
+.productPlus{
+  float:right;
+  font-size: 0.4em!important;
+  height: 25px;
+
+}
+
+.productMinus, .productPlus{
+  color: white!important;
+  font-size: 0.5em!important;
+  width: 50%;
+  display: inline-block;
+  margin-top: 0px;
+  height: 28px!important;
+  padding-top: 0px;
+}
+
+.addToCart{
+  background-image: url("/assets/icons/add-on.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center!important;
+  padding-right: 20px;
+  color: white;
+  font-size: 4em;
+  background: #61bde4;
+  height: 90px;
+  line-height: 99px;
+  display: inline-block;
+  padding-left: 90px;
+  background-position-x: 12px!important;
+}
+
+
+
+material-button.addToCart:hover:not([disabled]), material-button.addToCart.focus{
+  background:overlay(#61bde4, #545454)!important;
+  background-image: url("/assets/icons/add-on.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center!important;
+  background-position-x: 12px!important;
+
+}
+
+material-button.productMinus:hover:not([disabled]), material-button.productMinus.focus{
+  background:overlay(#438bab, #545454)!important;
+}
+
+material-button.productPlus:hover:not([disabled]), material-button.productPlus.focus{
+  background:overlay(#438bab, #545454)!important;
+}
+
+//material-button.rightbut:hover:not([disabled]){
+//  background: overlay(#6f8e3b, #aaa)!important;
+//}
+
+.taxDiv{
+  width: calc(~'100% - 130px');
+}
+
+.cartDiv{
+  width: 55px;
+  height: 55px;
+  background: #98c03d;
+  color: white!important;
+  border-radius: 50%;
+  margin-top: 20px;
+  font-size: 4.5em;
+  line-height: 1.6em;
+  text-align: center;
+  margin-left: -24px;
+}

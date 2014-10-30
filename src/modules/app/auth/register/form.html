@@ -1,0 +1,11 @@
+<h1>Register Form</h1>
+
+<form name="registerForm" method="post" ng-submit="register(credentials)" novalidate form-autofill-fix>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="username" ng-model="credentials.username" />
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="password" ng-model="credentials.password" />
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" ng-model="credentials.name" />
+    <button type="submit">Registrar</button>
+</form>

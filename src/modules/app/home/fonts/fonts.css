@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('Avenir-Book.eot?#iefix') format('embedded-opentype'),  url('Avenir-Book.woff') format('woff'), url('Avenir-Book.ttf')  format('truetype'), url('Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('medium.eot');
+    src: url('medium.eot') format('embedded-opentype'),
+    url('medium.woff2') format('woff2'),
+    url('medium.woff') format('woff'),
+    url('medium.ttf') format('truetype'),
+    url('medium.svg#AvenirMedium') format('svg');
+}

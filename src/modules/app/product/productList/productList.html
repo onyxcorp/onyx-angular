@@ -1,0 +1,32 @@
+<div class="grid">
+    <!-- Controller ProductsCtrl loaded in config.js -->
+    <div class="grid-item" ng-repeat="product in productListCtrl.products" >
+
+        <product-item id="product.getId()">
+
+            <!-- change this for a big directive from single product -->
+            <div class="grid-content">
+                <a ui-sref="store.main.product({ productId : product.getId()})">
+                    <product-item-image></product-item-image>
+                </a>
+            </div>
+
+            <div class="grid-content">
+                <h3 class="productTitle" product-bind="title"></h3>
+                <p class="percentualDesconto"><span product-bind="initial_discount" filter="number:0"></span>%</p>
+                <div class="prices">
+                    <p class="oldPrice">de <span product-bind="original_price" filter="currency:R$ "></span></p>
+                    <p class="price" product-bind="price" filter="currency:R$ "></p>
+                </div>
+            </div>
+
+            <div class="butboxes">
+                <material-button player-wishlist-add product-id="product.id" ng-class="{active : isProductWished}" class="leftbut" title="Adicionar a Wishlist"><span class="butwish">WISHLIST</span></material-button>
+                <material-button product-item-add class="rightbut"><span><i class="fa fa-shopping-cart">ADICIONAR ITEM</i></span></material-button>
+            </div>
+
+        </product-item>
+
+    </div>
+
+</div>

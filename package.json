@@ -1,0 +1,115 @@
+{
+  "private": "true",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "postinstall": "npm install browserify@4.2.3 gulp-header"
+  },
+  "devDependencies": {
+    "browserify-shim": "^3.6.0",
+    "connect": "^2.24.2",
+    "gulp": "^3.8.0",
+    "gulp-angular-templatecache": "^1.2.1",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-csso": "^0.2.9",
+    "gulp-if": "^1.2.1",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-jshint": "^1.6.2",
+    "gulp-less": "^1.3.3",
+    "gulp-livereload": "^2.1.0",
+    "gulp-minify-html": "^0.1.4",
+    "gulp-ng-annotate": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-sourcemaps": "^1.1.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-watch": "^0.6.9",
+    "jshint-stylish": "^0.2.0",
+    "run-sequence": "^0.3.6",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.2",
+    "yargs": "^1.2.2"
+  },
+  "browser": {
+    "angular": "./bower_components/angular/angular.js",
+    "angular-animate": "./bower_components/angular-animate/angular-animate.js",
+    "angular-aria": "./bower_components/angular-aria/angular-aria.js",
+    "angular-charts": "./bower_components/angular-charts/dist/angular-charts.js",
+    "angular-cookies": "./bower_components/angular-cookies/angular-cookies.js",
+    "angular-intro.js": "./bower_components/angular-intro.js/src/angular-intro.js",
+    "angular-loading-bar" : "./bower_components/angular-loading-bar/build/loading-bar.js",
+    "angular-local-storage": "./bower_components/angular-local-storage/dist/angular-local-storage.js",
+    "angular-masonry": "./bower_components/angular-masonry/angular-masonry.js",
+    "angular-material": "./bower_components/angular-material/angular-material.js",
+    "angular-resource": "./bower_components/angular-resource/angular-resource.js",
+    "angular-snap": "./bower_components/angular-snap/angular-snap.js",
+    "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.js",
+    "d3": "./bower_components/d3/d3.js",
+    "hammerjs": "./bower_components/hammerjs/hammer.js",
+    "jquery": "./bower_components/jquery/dist/jquery.js",
+    "moment": "./bower_components/moment/moment.js",
+    "ngDialog": "./bower_components/ngDialog/js/ngDialog.js",
+    "snapjs": "./bower_components/snapjs/snap.js",
+    "tether": "./bower_components/tether/tether.js",
+    "underscore": "./bower_components/underscore/underscore.js",
+    "underscore-string": "./bower_components/underscore.string/dist/underscore.string.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "hammerjs" : "Hammer",
+    "angular": {
+      "exports": "angular",
+      "depends": ["jquery:$"]
+    },
+    "angular-animate": {
+      "exports": "angular.module('ngAnimate').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-aria": {
+      "exports": "angular.module('ngAria').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-cookies": {
+      "exports": "angular.module('ngCookies').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-intro.js": {
+      "exports": "angular.module('angular-intro').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-loading-bar": {
+      "exports" : "angular.module('cfp.loadingBar').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-local-storage": {
+      "exports": "angular.module('LocalStorageModule').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-material": {
+      "exports": "angular.module('ngMaterial').name",
+      "depends": ["angular:angular","hammerjs","angular-animate","angular-aria"]
+    },
+    "angular-snap": {
+      "exports": "angular.module('snap').name",
+      "depends": ["angular:angular","snapjs"]
+    },
+    "angular-resource": {
+      "exports": "angular.module('ngResource').name",
+      "depends": ["angular:angular"]
+    },
+    "angular-ui-router": {
+      "exports": "angular.module('ui.router').name",
+      "depends": ["angular:angular"]
+    },
+    "ngDialog": {
+      "exports": "angular.module('ngDialog').name",
+      "depends": ["angular:angular"]
+    },
+    "underscore": "_",
+    "underscore-string": {
+      "depends": ["underscore:_"]
+    }
+  }
+}

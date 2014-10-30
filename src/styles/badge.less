@@ -1,0 +1,138 @@
+@badgeColor:#f15950;
+
+#badge-button {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 4px;
+
+}
+
+  #badge-button.active {
+
+  }
+
+  #badge-block {
+    z-index: 3;
+    background: #211924;
+    color: white;
+    width: 500px;
+  }
+
+
+  .badgesIcon{
+  background-color: @badgeColor;
+    background-image: url('/assets/icons/badges.png')!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    background-size: 25px!important;
+  }
+
+// Badge Box Starts Here //
+
+  #badgeTitle{
+    text-align:center;
+  }
+
+  #badgeUL{
+    list-style: none;
+    margin-right: 44px;
+  }
+  .badgeIcon{
+    float: left;
+    height: 100%;
+    width: 61px;
+    margin-right: 10px;
+
+  }
+
+  .badgeName{
+    display: block;
+    font-size: 2.4em;
+    padding-top: 8px;
+    font-weight: 700;
+  }
+
+  .badgeInfo{
+    font-size: 1.8em;
+  }
+
+  .badgeImg{
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 6px;
+  }
+
+  .badgeValue{
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    font-size: 1.6em;
+    margin-top: 4px;
+  }
+
+  .badgeUnlocked, .badgeLocked{
+    display: block;
+    height: 63px;
+    margin-bottom: 4px;
+  }
+
+  .badgeUnlocked{
+    background:#57455b;
+  }
+
+  .badgeUnlocked .badgeIcon{
+    background:#372c39;
+  }
+
+  .badgeLocked{
+    background:#625754;
+  }
+
+  .badgeLocked .badgeIcon{
+    background:#3e3735;
+  }
+
+  .badgeLocked .badgeImg{
+    filter: grayscale(100%);
+    filter: url(#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+  }
+
+  .badgeUnlocked .badgeValue{
+    color: #d7694b;
+  }
+
+  .badgeLocked .badgeValue{
+    color: #cbcbcb;
+  }
+
+  #badgesExit{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background: #c32026;
+    position: absolute;
+    right: 0px;
+  }
+
+
+
+material-button.badgesIcon:hover:not([disabled]), material-button.badgesIcon.focus{
+  .sizeTransition;
+  background:overlay(@badgeColor, #666)!important;
+  background-image: url('/assets/icons/badges.png')!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: 28px!important;
+
+
+}

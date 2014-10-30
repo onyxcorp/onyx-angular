@@ -1,0 +1,14 @@
+{
+    "players" : [
+        { "id" : 1, "name" : "Fábio", "level" : 10, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 1500, "disabled" : 0, "img" : ""},
+        { "id" : 2, "name" : "Gabriel", "level" : 8, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 780, "disabled" : 0, "img" : ""},
+        { "id" : 3, "name" : "Ana Paula", "level" : 9, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 550, "disabled" : 0, "img" : ""},
+        { "id" : 4, "name" : "Ricardo", "level" : 7, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 975, "disabled" : 0, "img" : ""},
+        { "id" : 5, "name" : "Paulo", "level" : 8, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 1100, "disabled" : 0, "img" : ""},
+        { "id" : 6, "name" : "Jussara", "level" : 1, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 250, "disabled" : 0, "img" : ""},
+        { "id" : 7, "name" : "Geraldo", "level" : 2, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 300, "disabled" : 0, "img" : ""},
+        { "id" : 8, "name" : "Dilma", "level" : 3, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 350, "disabled" : 0, "img" : ""},
+        { "id" : 9, "name" : "Marina", "level" : 4, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 375, "disabled" : 0, "img" : ""},
+        { "id" : 10,"name" : "Aécio", "level" : 5, "points_earned" : 1000, "points_spent" : 0, "current_points" : 1000, "comission" : 550, "disabled" : 0, "img" : ""}
+    ]
+}

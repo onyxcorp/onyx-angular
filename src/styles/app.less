@@ -1,0 +1,493 @@
+@import "address";
+@import "angular-material";
+@import "angular-snap";
+@import "badge";
+@import "card";
+@import "friend";
+@import "imports";
+@import "ngDialog";
+@import "ngDialog-theme-default";
+@import "order";
+@import "player";
+@import "product";
+@import "search";
+@import "taxonomy";
+@import "variables";
+@import "wishlist";
+@import "font-awesome/less/font-awesome";
+
+/* Component LESS */
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel a { cursor: pointer; }
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}
+
+/* Styles go here */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+
+/* Less Toolbar */
+.grayscaler(@value: 1) {
+  -webkit-filter: grayscale(@value);
+  -moz-filter: grayscale(@value);
+  -o-filter: grayscale(@value);
+  -ms-filter: grayscale(@value);
+  filter: grayscale(@value);
+}
+
+.colortransition(@duration: 0.3s){
+  transition: background-color @duration ease;
+  -webkit-transition: background-color @duration ease;
+  -moz-transition: background-color @duration ease;
+  -o-transition: background-color @duration ease;
+}
+
+.graytransition(@duration: 0.3s){
+  transition: filter @duration ease;
+  transition: -ms-filter @duration ease;
+  -webkit-transition: -webkit-filter @duration ease;
+  -moz-transition: -moz-filter @duration ease;
+  -o-transition: -o-filter @duration ease;
+
+}
+// Round Faces
+.face{
+  display:block;
+  background: url('http://astrobioloblog.files.wordpress.com/2011/10/duck-1.jpg') no-repeat;
+  width: 48px;
+  height:48px;
+  margin: 12px;
+  border-radius: 50%;
+  background-size: 70px auto;
+  background-position: 40% 30%;
+}
+
+//for Background-Size
+.sizeTransition(@time: 0.2s){
+  -webkit-transition: background-size @time linear!important;
+  -moz-transition: background-size @time linear!important;
+  -ms-transition: background-size @time linear!important;
+  -o-transition: background-size @time linear!important;
+  transition: background-size @time linear!important;
+}
+
+
+.flex13{
+  max-width: 13%!important;
+}
+
+html,
+body {
+  /* The html and body elements cannot have any padding or margin. */
+  height: 100%;
+  background: #69758a!important;
+  font-family: Avenir-Book, Arial!important;
+  font-size: 62.5%!important; /* resets the page font size */
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+#content {
+  /* since we are using fixed header and footer we must include a padding in the main content area */
+  padding-bottom: 65px;
+  background: white;
+  position: relative;
+}
+
+#player-console {
+  margin: 0 auto;
+  margin-top: -36px;
+}
+
+#secondaryView {
+  background: transparent;
+  position: fixed;
+  top : 50px;  /** same height as top navbar */
+  left: 0;
+}
+
+.ng-cloak { /** make sure conditional elements are hidden when angularjs is still loading **/
+  display: none;
+}
+
+#header{
+  background: #fff!important;
+  border-bottom: none!important;
+}
+
+.colorbar{
+  margin-bottom: -5px;
+  margin-top: -15px;
+  position:absolute;
+  width:100%;
+  top: 72px;
+}
+
+.colorbar span{
+  display:inline-block;
+  width: 20%;
+  height:4px;
+}
+
+.bar1{
+  background: #4ec5d7;
+}
+
+.bar2{
+  background: #fbe21d;
+}
+
+.bar3{
+  background: #e92c4b;
+}
+
+.bar4{
+  background: #57455b;
+}
+
+.bar5{
+  background:#9ac241;
+}
+
+.submitSearch{
+  background: #56c6d8;
+  color: white!important;
+  float: right;
+  height: 40px;
+  font-size: 3.8em;
+  text-align: center;
+  width: 40px;
+}
+
+.searchTop{
+  background: #f7f8f8;
+  border: 1px solid #ededed;
+  border-radius: 0px!important;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.5em!important;
+  padding-left: 10px;
+  float: left;
+  width: calc(~'100% - 40px');
+
+}
+
+.logo{
+  background-image: url("/assets/icons/logoc.png") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 66px;
+  height: 66px;
+  background-size: 66px;
+  margin-top: -4px !important;
+  position: relative;
+  z-index: 99;
+}
+
+.logoMobile{
+  background-image: url("/assets/icons/logoc.png") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-size: 55px;
+  margin-top: -17px !important;
+  position: relative;
+  z-index: 99;
+}
+
+::-webkit-input-placeholder {
+  color: #b4b6b7!important;
+}
+
+:-moz-placeholder {
+  color: #b4b6b7!important;
+}
+::-moz-placeholder {
+  color: #b4b6b7!important;
+}
+
+:-ms-input-placeholder {
+  color: #b4b6b7!important;
+}
+
+.nav{
+  width: 100%;
+  list-style: none;
+}
+
+#topoDireito{
+  float: right;
+  margin-top: 10px;
+}
+
+.categoriasBut{
+  background: #34b3e0; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM0YjNlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzM0YjNlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzYxYmRlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2MWJkZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #34b3e0 0%, #34b3e0 50%, #61bde4 51%, #61bde4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#34b3e0), color-stop(50%,#34b3e0), color-stop(51%,#61bde4), color-stop(100%,#61bde4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* IE10+ */
+  background: linear-gradient(to right, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34b3e0', endColorstr='#61bde4',GradientType=1 ); /* IE6-8 */
+  color: white!important;
+  display: inline-block;
+  height: 40px!important;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 2.4em;
+  line-height: 42px;
+  min-width: 120px;
+  margin-right: 5px;
+}
+
+.categoriasButSmall{
+  background: #34b3e0; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM0YjNlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzM0YjNlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzYxYmRlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2MWJkZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #34b3e0 0%, #34b3e0 50%, #61bde4 51%, #61bde4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#34b3e0), color-stop(50%,#34b3e0), color-stop(51%,#61bde4), color-stop(100%,#61bde4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* IE10+ */
+  background: linear-gradient(to right, #34b3e0 0%,#34b3e0 50%,#61bde4 51%,#61bde4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34b3e0', endColorstr='#61bde4',GradientType=1 ); /* IE6-8 */
+  color: white!important;
+  display: inline-block;
+  height: 40px!important;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 2.4em;
+  line-height: 42px;
+  margin-right: 5px;
+}
+
+.carrinhoTop{
+  display: block;
+  background: #98c03d;
+  height: 40px;
+  width: 198px;
+  background-image: url("/assets/icons/add-on.png") !important;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 39px;
+  background-position-x: 154px;
+  margin-top: 14px;
+}
+
+#descontoTop{
+  //  display: inline-block;
+  //  color: white;
+  //  background: #6f8e3b;
+  //  height: 40px;
+  //  width: 40px;
+  //  font-size: 2em;
+  //  padding-top: 10px;
+  //  text-align: center;
+  //  margin-top: 0px;
+  display: inline-block;
+  color: white;
+  background: #6f8e3b;
+  height: 55px;
+  width: 80px;
+  font-size: 3em;
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+  padding-right: 16px;
+  line-height: 34px!important;
+
+}
+
+#cartTitle{
+  color: white;
+  font-size: 2.5em;
+  margin-top: 1px;
+  position: absolute;
+  margin-left: 8px;;
+  font-weight: bold;
+}
+
+#moarEcono{
+  color: white;
+  text-decoration: underline;
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 8px;
+  font-size: 1.8em;
+}
+
+#qtyCart{
+  //  background: #e92c4b;
+  //  color: white!important;
+  //  position: relative;
+  //  margin-left: 26px;
+  //  min-width: 19px!important;
+  //  height: 19px!important;
+  //  font-size: 2.1em;
+  //  text-align: center;
+  //  border-radius: 61px;
+  //  padding-top: 1px;
+  //  float: right;
+  //  margin-top: -6px;
+  //  margin-right: -6px;
+  //  line-height: 19px;
+  background: #e92c4b;
+  color: white!important;
+  position: relative;
+  margin-left: 26px;
+  min-width: 19px!important;
+  height: 19px!important;
+  font-size: 0.5em!important;
+  text-align: center;
+  border-radius: 61px;
+  float: right;
+  margin-top: -55px;
+  margin-right: -6px;
+  line-height: 19px;
+
+}
+
+#footer{
+  background: #3b2e3f;
+  border-top: none!important;
+}
+
+.footerToolbar{
+  min-height: 30px!important;
+}
+
+.icons{
+  display:inline-block;
+  position: relative;
+  z-index: 99;
+  margin-right: 17px;
+  text-align: center;
+}
+
+.iconsLast{
+  margin-right: 0px!important;
+}
+
+.iconsbut{
+  .sizeTransition;
+  width: 50px!important;
+  height: 50px!important;
+  background-size: 29px;
+
+}
+
+.iconWrapper{
+  background-image: url("/assets/icons/hexagon_rounded-glow-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  height: 80px;
+  margin-top: -82px;
+}
+
+#appPlayground{
+  width: 100%;
+  position: fixed;
+  bottom: 7px;
+  margin-left: -16px;
+
+}
+
+
+.ngdialog-overlay{
+  background: rgba(255, 255, 255, 0.75)!important;
+  //  opacity: 0.75!important;
+  //  filter: alpha(opacity=75);
+}
+
+.modal-backdrop{
+  background:#fff!important;
+}
+
+.modal-dialog{
+  width:100%;
+}
+
+.modal-content{
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.ngdialog.ngdialog-theme-default .ngdialog-content{
+  z-index: 2;
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
+  min-width: 80%;
+  background: white!important;
+}
+
+.ngdialog.ngdialog-theme-default{
+  padding-top: 5%!important;
+}
+
+.snap-drawer-left{
+  margin-top: -12px!important;
+}
+
+#mobileBar{
+  background: #3b2e3f;
+}
+
+#mobileBar div, #mobileBar a{
+  text-align:center;
+  font-size: 1.7em;
+  color: rgba(255,255,255, 0.4);
+}
+
+#mobileBar div:hover, #mobileBar a:hover {
+  color: #fff;
+}
+
+#mobileBar  a.active{
+  color: #fff;
+}
+
+#mobileHeader{
+  background: white;
+  height: 64px;
+}
+
+.snapClass{
+  background: #211924;
+}
+
+.mobileToolbar{
+  box-shadow: 2px -1px 11px -2px;
+}

@@ -1,0 +1,32 @@
+{
+    "badges" : [
+        { "id" : 1, "name" : "Tutorial", "unlock_at" : "tutorial", "points" : 500, "description" : "Realizou o tutorail com sucesso", "img" : ""},
+        { "id" : 2, "name" : "Navegação", "unlock_at" : "clicked_around_site", "points" : 500, "description" : "Passou mais de 10 minutos navegando no site", "img" : ""},
+        { "id" : 3, "name" : "Vegano", "unlock_at" : "greenfoods", "points" : 5000, "description" : "Compre somente produtos veganos", "img" : ""},
+        { "id" : 4, "name" : "Compra", "unlock_at" : "firstbuy", "points" : 5000, "description" : "Realizou sua primeira compra!", "img" : ""},
+        { "id" : 5, "name" : "5 Amigos", "unlock_at" : "5friends", "points" : 5000, "description" : "Convide 5 amigos para economizar no pagapo.co", "img" : ""},
+        { "id" : 6, "name" : "10 amigos", "unlock_at" : "10friends", "points" : 10000, "description" : "Convide 10 amigos para economizar no pagapo.co", "img" : ""},
+        { "id" : 7, "name" : "15 amigos", "unlock_at" : "15friends", "points" : 20000, "description" : "Convide 15 amigos para economizar no pagapo.co", "img" : ""}
+    ],
+
+    "badge_player" : [
+        { "id" : 1, "badge_id" : 1, "player_id" : 1 },
+        { "id" : 2, "badge_id" : 2, "player_id" : 1 },
+        { "id" : 3, "badge_id" : 3, "player_id" : 1 },
+        { "id" : 4, "badge_id" : 4, "player_id" : 1 },
+        { "id" : 5, "badge_id" : 5, "player_id" : 1 },
+        { "id" : 6, "badge_id" : 6, "player_id" : 1 },
+        { "id" : 7, "badge_id" : 1, "player_id" : 2 },
+        { "id" : 8, "badge_id" : 2, "player_id" : 2 },
+        { "id" : 9, "badge_id" : 3, "player_id" : 2 },
+        { "id" : 10, "badge_id" : 4, "player_id" : 2 },
+        { "id" : 11, "badge_id" : 1, "player_id" : 3 },
+        { "id" : 12, "badge_id" : 2, "player_id" : 3 },
+        { "id" : 13, "badge_id" : 3, "player_id" : 3 },
+        { "id" : 14, "badge_id" : 4, "player_id" : 3 },
+        { "id" : 15, "badge_id" : 1, "player_id" : 4 },
+        { "id" : 16, "badge_id" : 2, "player_id" : 4 },
+        { "id" : 17, "badge_id" : 3, "player_id" : 4 },
+        { "id" : 18, "badge_id" : 4, "player_id" : 4 }
+    ]
+}

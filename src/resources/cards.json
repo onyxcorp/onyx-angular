@@ -1,0 +1,18 @@
+{
+    "cards" : [
+        {"id" : 1, "name" : "Cheernut", "discount" : 0.20, "active" : 1, "applied" : 0, "points_limit" : 2000, "image" : ""},
+        {"id" : 2, "name" : "Fast Brocolis", "discount" : 0.10, "active" : 1, "applied" : 0, "points_limit" : 500, "image" : ""},
+        {"id" : 3, "name" : "Pumpapple", "discount" : 0.30, "active" : 1, "applied": 0, "points_limit" : 5000, "image" : ""}
+    ],
+
+    "card_dropped" : [
+        {"id" : 1, "card_id" : 1, "playerId" : 1, "store_id" : 1},
+        {"id" : 2, "card_id" : 1, "playerId" : 1, "store_id" : 2},
+        {"id" : 3, "card_id" : 2, "playerId" : 1, "store_id" : 3},
+        {"id" : 4, "card_id" : 1, "playerId" : 1, "store_id" : null},
+        {"id" : 5, "card_id" : 2, "playerId" : 1, "store_id" : null},
+        {"id" : 6, "card_id" : 3, "playerId" : 1, "store_id" : null},
+        {"id" : 7, "card_id" : 1, "playerId" : 2, "store_id" : null},
+        {"id" : 8, "card_id" : 2, "playerId" : 3, "store_id" : null}
+    ]
+}

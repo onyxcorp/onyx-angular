@@ -1,0 +1,10 @@
+{
+    "orders" : [
+        {"id" : 1, "player_id" : 1, "total_itens" : 10, "total_from" : 750.00, "total" : 550.00, "discount" : 0.1, "total" : 495.00, "closed_at" : "14/05/2014", "dispatched" : 1},
+        {"id" : 2, "player_id" : 1, "total_itens" : 10, "total_from" : 800.00, "total" : 670.00, "discount" : 0.2, "total" : 536.00, "closed_at" : "15/06/2014","dispatched" : 1},
+        {"id" : 3, "player_id" : 1, "total_itens" : 10, "total_from" : 1050.00, "total" : 930.00, "discount" : 0.2, "total" : 744.00, "closed_at" : "15/07/2014","dispatched" : 1},
+        {"id" : 4, "player_id" : 2, "total_itens" : 10, "total_from" : 850.00, "total" : 730.00, "discount" : 0.5, "total" : 365.00, "closed_at" : "15/08/2014","dispatched" : 1},
+        {"id" : 5, "player_id" : 2, "total_itens" : 10, "total_from" : 450.00, "total" : 320.00, "discount" : 0.3, "total" : 224.00, "closed_at" : "15/05/2014","dispatched" : 1},
+        {"id" : 6, "player_id" : 3, "total_itens" : 10, "total_from" : 690.00, "total" : 447.00, "discount" : 0.4, "total" : 268.20, "closed_at" : "23/06/2014","dispatched" : 1}
+    ]
+}

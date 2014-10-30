@@ -1,0 +1,10 @@
+{
+    "categories" : [
+        {"id" : 1, "name" : "Barrinhas", "slug" : "barrinhas"},
+        {"id" : 2, "name" : "Biscoitos", "slug" : "biscoitos"},
+        {"id" : 3, "name" : "Balas", "slug" : "balas"},
+        {"id" : 4, "name" : "Suplementos", "slug" : "suplementos"},
+        {"id" : 5, "name" : "Grãos e Cereais", "slug" : "graos-e-cereais"},
+        {"id" : 6, "name" : "Óleo e Azeite", "slug" : "oleo-e-azeites"}
+    ]
+}

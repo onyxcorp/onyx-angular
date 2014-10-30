@@ -1,0 +1,134 @@
+@friendsColor: #ed733a;
+
+#friend-button{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 4px;
+}
+
+  #friend-button.active {
+  }
+
+  #friend-block {
+    background:#2f353f;
+    border-left: 2px solid #69758a;
+    color: white;
+  }
+
+.friendsIcon{
+  background: @friendsColor;
+  background-image: url("/assets/icons/friends.png");
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+}
+
+
+material-button.friendsIcon:hover:not([disabled]), material-button.friendsIcon.focus{
+  .sizeTransition;
+  background:overlay(@friendsColor, #666)!important;
+  background-image: url("/assets/icons/friends.png")!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: 32px!important;
+
+}
+
+.friendsTitle{
+  text-align: center;
+}
+
+.friendsUL{
+  list-style: none!important;
+  max-width: 320px;
+  margin-right: 40px;
+}
+
+.friendsLi{
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+.crown{
+  background-image: url("/assets/icons/king.png");
+  background-repeat: no-repeat;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -12px;
+}
+
+.friendsImg{
+  border-radius:50%;
+  overflow:hidden;
+  width: 50px;
+  height:50px;
+  float: left;
+  margin-right: 15px;
+}
+
+.friendsName{
+  display:block;
+  font-size: 2.4em;
+  padding-top: 4px;
+}
+
+.friendProfit{
+  color: #6f8e3b;
+  font-size: 1.8em;
+}
+
+.friendsGone{
+  color: #e5534d;
+  font-size: 1.8em;
+}
+
+.friendMsg{
+  background-image: url("/assets/icons/mail.png");
+  background-repeat: no-repeat;
+  float:right;
+  background-size:30px;
+  width:30px;
+  height:30px;
+  margin-top: -15px;
+}
+
+.friendsBadge{
+  background-image: url("/assets/icons/badges.png");
+  float: right;
+  background-size: 27px;
+  width: 30px;
+  background-repeat: no-repeat;
+  height: 30px;
+  background-position: center center;
+  margin-top: -15px;
+}
+
+.friendsLvl{
+  background: #849b52;
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  left: 70px;
+  text-align: center;
+  margin-top: 26px;
+  display: inline-block;
+  color: white;
+  font-size: 1.8em;
+  line-height: 14px;
+}
+
+.fLvl{
+  display: block;
+  color: white;
+  font-size: 0.3em;
+  line-height: 4px;
+  margin-top: 5px
+}

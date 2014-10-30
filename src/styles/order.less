@@ -1,0 +1,306 @@
+#order-button{
+  cursor: pointer;
+  border: 1px solid white;
+  background: white;
+  color: black;
+}
+
+  #order-button.active {
+    border: 1px solid red;
+    background: black;
+    color: white;
+  }
+
+
+
+
+  /**
+    PAGINA DE RESUMO
+  **/
+
+.base-style(@color: #fff){
+  background: @color;
+  border: 1px solid #d0d0cf;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.resumeUL{
+  list-style:none;
+  padding-left: 0px;
+}
+
+.resumeLi{
+  .base-style();
+  height: 145px;
+}
+
+.resumeImg{
+  max-height: 120px;
+  display: inline-block;
+  float: left;
+  margin-right:10px;
+}
+
+.resumeName{
+  color:#616262;
+  font-size: 3em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 40px!important;
+  margin-top: -5px;
+  width: 50%;
+  margin-bottom: 5px;
+
+}
+
+.resumeDesconto{
+  max-width: 45px;
+  height: 45px;
+  color: #fff;
+  background: #98c03d;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 12px;
+}
+
+.resumePrice{
+  display:inline-block;
+  color: #98c03d;
+  font-size: 4em;
+}
+
+.resumeQty{
+  float: right;
+  background: #adadad;
+  width: 90px;
+  height: 90px;
+  color: white;
+  margin-top: -15px;
+  margin-right: 19px;
+  font-size: 8.3em;
+  text-align: center;
+}
+
+.resumeControls{
+  border-top: 1px solid white;
+  position: relative;
+  margin-top: -9px;
+  line-height: 6px;
+  width: 100%;
+}
+
+.resumeRow{
+  border-right:1px solid white;
+  height: 25px;
+
+}
+
+.resumeMinus{
+  float: left;
+  border-right: 1px solid white!important;
+  height: 25px;
+}
+
+.resumePlus{
+  float:right;
+  font-size: 0.4em!important;
+  height: 25px;
+
+}
+
+.resumeMinus, .resumePlus{
+  color: white!important;
+  font-size: 0.5em!important;
+  width: 50%;
+  display: inline-block;
+  margin-top: 0px;
+  padding-top: 9px;
+}
+
+.resumeVal{
+  color:#e92c4b;
+  display:block;
+  font-size: 2em!important;
+  margin-top: -21px;
+  margin-left: 5px;
+}
+
+.resumeDel{
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  background: #c32026;
+  margin-top: -43px;
+  line-height: 16px;
+  float: right;
+  margin-right: -16px;
+}
+
+#resumeSidebar1{
+  .base-style();
+  display: block;
+  padding: 20px;
+  max-height: 220px;
+}
+
+#resumeAddress{
+  background-image: url("/assets/icons/casa.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d0d0cf;
+  padding-left: 76px;
+  background-size: 58px;
+  background-position-y: 9px;
+  margin-bottom: 30px;
+
+}
+
+.sidebarTitle{
+  color: #3b2e3f;
+  display:block;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.sidebarLink{
+  color: #3b2e3f;
+  display:block;
+  font-size: 2em;
+}
+
+#resumePrazo{
+  text-align: center;
+  font-size: 2em;
+  color:#e92c4b;
+}
+
+#resumePay{
+  background-image: url("/assets/icons/moni.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 76px;
+  background-size: 58px;
+  min-height: 50px;
+}
+
+#resumeSidebar2{
+  .base-style();
+  display: block;
+  padding: 20px;
+  max-height: 440px;
+}
+
+#subtotal{
+  display: inline-block;
+  margin-top: -10px!important;
+  margin-right: 10px;
+}
+
+#resumeSubtotal{
+  text-decoration: line-through;
+  color:#b5b5b6;
+  font-size: 3em;
+}
+
+.subtotalDesconto{
+  max-width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #98c03d;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 40px;
+}
+
+.subtotalPrice{
+  display: block;
+  color: #98c03d;
+  font-size: 5.3em;
+  margin: 0 auto;
+  font-weight: 700;
+  padding-right: 80px;
+  margin-top: -4px;
+  margin-bottom: -3px;
+}
+
+.continha{
+  margin-top: 5px;
+  margin-left: 1px;
+  text-align:right;
+
+}
+
+.continha2{
+  margin-left: 1px;
+  text-align:right;
+  border-bottom: 1px solid #6e8d3b;
+}
+
+.continha3{
+  margin-left: 1px;
+  text-align:center;
+}
+
+.precoFinal{
+  font-weight: 700;
+  font-size: 8em;
+  color: #98c03d;
+}
+
+.subtotalFrete{
+  color: #5fbfd8;
+  font-size: 5em;
+  padding-right: 80px;
+  display:inline-block;
+}
+
+#frete{
+  background-image: url("/assets/icons/frete.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 40px;
+  height: 40px;
+  left: 37px;
+  background-size: 39px;
+  margin-top: 7px;
+}
+
+.recomendado{
+  width: 49%;
+  display: block;
+  margin: 0 auto;
+}
+
+.resumeOldPrice{
+  text-decoration: line-through;
+  color: #b5b5b6;
+  font-size: 2em;
+  display: block;
+  margin-bottom: -5px;
+}
+
+.pricesBox{
+  margin-top: 11px;
+}
+
+.resumeProductTotal{
+  color: #3b2e3f;
+  display: inline-block;
+  right: 160px;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.resumeProductTotalName{
+  display: block;
+  font-size: 0.56em;
+  text-align: center;
+  font-weight: 300;
+}

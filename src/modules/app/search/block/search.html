@@ -1,0 +1,21 @@
+<div flex="95" layout-align="end">
+    <filter-button></filter-button>
+    <div class='taxDiv'style="display:inline-block;">
+    <form class="navbar-form navbar-right">
+        <input  type="text" class="form-control searchTop" placeholder="O que está procurando ?" ng-model="searchCtrl.search.term" ng-change="searchCtrl.searchForm(search.term)"><a class="submitSearch" title="buscar"><i class="fa fa-search"></i></a>
+        <!--<tags-input class="bootstrap"-->
+                    <!--ng-model="movies"-->
+                    <!--placeholder="Add a movie"-->
+                    <!--replace-spaces-with-dashes="false">-->
+        <!--</tags-input>-->
+        <!--<p>{{currentFilters}}</p>-->
+        <!--<div ng-show="filters.length">-->
+        <!--<div>-->
+            <!--<label ng-repeat="checkbox_ in filters">-->
+                <!--<input type="checkbox" ng-model="chosens.checkbox_.name" id="checkbox_{{$index}}" ng-change="searchFormByTag(chosens)" />-->
+                <!--{{checkbox_.name}}-->
+            <!--</label>-->
+        <!--</div>-->
+    </form>
+    </div>
+</div>

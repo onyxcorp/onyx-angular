@@ -1,0 +1,50 @@
+<h1 class="productName" ng-bind="productStateCtrl.product.title()"></h1>
+<div layout="horizontal" layout-padding >
+
+    <div flex="33" layout="vertical" >
+
+        <img class="productImg" ng-src="{{productStateCtrl.product.image()}}" />
+
+        <span flex id="productInfo"><span id="productInfoIcon"></span><p id="productInfoText">Mais informações</p></span>
+
+        <select id="productDate" ng-model="myDate" ng-options="'Val.: ' + exp for exp in productStateCtrl.product.expiration()"></select>
+
+        <span class="productTags">#tag, #tag, #tag, #tag, #tag, #tag, #tag</span>
+
+        <!--<p ng-bind="product.description" class="productInfo"></p>-->
+        <a player-wishlist-add product="productStateCtrl.product.id()" ng-class="{active : isProductWished}" class="productWishLink" title="Adicionar a Wishlist">
+            <span class="productWish"></span><span class="productWishNumber">230</span>
+        </a>
+
+    </div>
+
+    <div flex="67">
+
+        <div ng-if="productStateCtrl.product.id() !== null" ac-chart="'line'" ac-data="productStateCtrl.product.priceHistory()" id="chart" class="chart"></div>
+
+        <!--<div id="my-chart" class="productChart ct-chart ct-golden-section" chartist pagapoco="product.price_history_pagapoco" outros="product.price_history_general"></div>-->
+        <div layout="horizontal" layout-align="start" >
+            <p flex class="productDesconto">10%</p>
+            <div flex class="productPrices">
+                <p class="productOldPrice">de <span ng-bind="(productStateCtrl.product.originalPrice() | currency:'R$ ')"></span> por</p>
+                <p ng-bind="(productStateCtrl.product.price() |  currency:'R$ ')" class="productPrice"></p>
+            </div>
+
+        </div>
+
+        <div layout="horizontal" layout-align="start" style="margin-top: -30px" >
+            <cart-item id="product.id">
+                    <div flex class="productQty">
+                        <span cart-item-quantity class="productQtyNumber">0</span>
+                        <div class="productControls">
+                            <material-button cart-item-minus class="productMinus">-</material-button>
+                            <material-button cart-item-plus class="productPlus">+</material-button>
+                        </div>
+                    </div>
+                <material-button flex cart-item-add class="addToCart" title="Adicionar ao Carrinho">Adicionar ao Carrinho</material-button>
+            </cart-item>
+        </div>
+
+    </div>
+
+</div>

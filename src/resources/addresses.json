@@ -1,0 +1,7 @@
+{
+    "addresses" : [
+        { "id" : 1, "playerId" : 1, "main" : 1, "name" : "Casa", "street" : "Avenida Osmundo Santos Pellegrini, 1555", "ref" : "Cemitério parque dos ipes", "city" : "Jundiaí", "state" : "SP", "cep" : "13211-745"},
+        { "id" : 2, "playerId" : 1, "main" : 0, "name" : "Escritório", "street" : "Rua Heliópolis, 230", "ref" : "Próximo ao ceasa", "city" : "São Paulo", "state" : "SP", "cep" : "15200-000"},
+        { "id" : 3, "playerId" : 2, "main" : 1, "name" : "Casa", "street" : "Avenida Osmundo Santos Pellegrini, 1555", "ref" : "Cemitério parque dos ipes", "city" : "Jundiaí", "state" : "SP", "cep" : "13211-745"}
+    ]
+}

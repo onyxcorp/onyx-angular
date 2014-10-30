@@ -1,0 +1,83 @@
+@barrinha: #fbe21d;
+@biscoito: #98c03d;
+@balas: #4ec5d7;
+@suplementos: #6f8e3b;
+@graos: #e92c4b;
+@oleo: #73557c;
+
+.randomColor(){
+  @randomColor: `Math.floor(Math.random()*16777215).toString(16)`;
+  @colorHex: e(@randomColor);
+  @color: ~"#@{colorHex}";
+}
+
+
+.barrinhas:hover, .barrinhas.active{
+  .colortransition;
+  background-color: @barrinha!important;
+}
+
+.biscoitos:hover, .biscoitos.active {
+  .colortransition;
+  background-color: @biscoito!important;
+}
+
+.balas:hover, .balas.active{
+  .colortransition;
+background-color: @balas!important;
+}
+
+.suplementos:hover, .suplementos.active{
+  .colortransition;
+  background-color: @suplementos!important;
+}
+
+.graos-e-cereais:hover, .graos-e-cereais.active{
+  .colortransition;
+  background-color: @graos!important;
+}
+
+.oleo-e-azeites:hover, .oleo-e-azeites.active{
+  .colortransition;
+  background-color: @oleo!important;
+}
+
+/**
+  Tags
+  **/
+.tagLi:hover, .tagLi.active{
+  .colortransition;
+  background-color: @balas!important;
+}
+
+
+.catList{
+  list-style: none;
+}
+
+.catLi{
+  display:block;
+  width: 120px;
+  height: 90px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 2em;
+  background-color: #CCCCCC;
+  .colortransition;
+}
+
+.cath1{
+  width: 100px;
+  margin-right: 10px;
+  font-size: 2em;
+}
+
+.catName{
+  width: 90px!important;
+  white-space: normal!important
+}
+
+.tagDiv{
+  margin-top: 6px;
+  font-size: 2em;
+}

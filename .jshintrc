@@ -1,0 +1,13 @@
+{
+    "node": true,
+    "browser": true,
+    "devel": true,
+    "plusplus": true,
+    "maxerr": 50,
+    "globals": {
+        "angular": true,
+        "_"      : true,
+        "jQuery" : true,
+        "$"      : true
+    }
+}

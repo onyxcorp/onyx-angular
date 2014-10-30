@@ -1,0 +1,10 @@
+{
+    "tags" : [
+        {"id" : 1, "name" : "Sem Gluten", "slug" : "sem-gluten"},
+        {"id" : 2, "name" : "Sem Lactose", "slug" : "sem-lactose"},
+        {"id" : 3, "name" : "Orgânico", "slug" : "organico"},
+        {"id" : 4, "name" : "Kosher", "slug" : "kosher"}
+    ]
+
+
+}

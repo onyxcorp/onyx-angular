@@ -1,0 +1,213 @@
+{
+    "products" : [
+        { "id" : 27, "product_batch_id" : 27, "title" : "bio2 7 Nuts Organic Cranberry com Castanhas", "supplier" : "bio2", "description" : "12 x 25g", "original_price" : 25.50, "initial_discount" : 0, "current_discount" : 0, "price" : 23.50, "quantity" : 0, "selected" : 0, "expiration" : ["01/11/2015"], "image" : "assets/images/27-bio2-7-nuts-organic-cranberry-7-castanhas.jpg" },
+        { "id" : 73, "product_batch_id" : 73, "title" : "Barra de Mixed Nuts Original Agtal", "supplier" : "Agtal", "description" : "12 unidades, 30g", "original_price" : 34.40, "initial_discount" : 0, "current_discount" : 0, "price" : 29.40, "quantity" : 0, "selected" : 0, "expiration" : ["14/10/2015"], "image" : "assets/images/73-barra-de-mixed-nuts-original-agtal.jpg" },
+        { "id" : 75, "product_batch_id" : 75, "title" : "Biscoito Leve Crock sem Glúten Palitos Salgados Linhaça Dourada", "supplier" : "Sabor Alternativo", "description" : "1 x 150g", "original_price" : 6.90, "initial_discount" : 0, "current_discount" : 0, "price" : 5.50, "quantity" : 0, "selected" : 0, "expiration" : ["01/08/2015"], "image" : "assets/images/75-Biscoito-Leve-Crock-sem-Gluten-Palitos-Salgados-Linhaca-Dourada-150g.jpg" },
+        { "id" : 100, "product_batch_id" : 100, "title" : "Óleo de Coco orgânico extra virgem", "supplier" : "Monama", "description" : "280ml", "original_price" : 29.00, "initial_discount" : 0, "current_discount" : 0, "price" : 24.50, "quantity" : 0, "selected" : 0, "expiration" : ["07/03/2015"], "image" : "assets/images/100-oleo-de-coco-organico-extra-virgem-280ml-monama.jpg" },
+        { "id" : 106, "product_batch_id" : 106, "title" : "Activeslim Fitness", "supplier" : "Activeslim", "description" : "20g", "original_price" : 15.90, "initial_discount" : 0, "current_discount" : 0, "price" : 6.50, "quantity" : 0, "selected" : 0, "expiration" : ["24/12/2014"], "image" : "assets/images/106-activeslim-fitness.jpg" },
+        { "id" : 137, "product_batch_id" : 137, "title" : "Biscoito Papa Ovo", "supplier" : "Nazinha", "description" : "100g", "original_price" : 11.90, "initial_discount" : 0, "current_discount" : 0, "price" : 3.50, "quantity" : 0, "selected" : 0, "expiration" : ["01/01/2016"], "image" : "assets/images/137-papa-ovo.jpg" },
+        { "id" : 141, "product_batch_id" : 141, "title" : "Remix Frutas", "supplier" : "Mãe Terra", "description" : "2 x 25g", "original_price" : 7.90, "initial_discount" : 0, "current_discount" : 0, "price" : 4.00, "quantity" : 0, "selected" : 0, "expiration" : ["15/04/2015"], "image" : "assets/images/141-MKP-Remix-Frutas-Secas.jpg" },
+        { "id" : 163, "product_batch_id" : 163, "title" : "Colágeno Artrocomplex 330g", "supplier" : "Sanavita", "description" : "330g", "original_price": 75.90, "initial_discount" : 0, "current_discount" : 0, "price" : 65.90, "quantity" : 0, "selected" : 0, "expiration" : ["01/08/2015"], "image" : "assets/images/163-colageno-artrocomplex-original-330g-sanavita.jpg"},
+        { "id" : 166, "product_batch_id" : 166, "title" : "Chocobeauty com Colágeno (Choco 40)", "supplier" : "Beauty'in", "description" : "1 x 40g", "original_price" : 8.90, "initial_discount" : 0, "current_discount" : 0, "price" : 7.30, "quantity" : 0, "selected" : 0, "expiration" : ["15/05/2016"], "image" : "assets/images/166-chocobeautyavela.jpg" },
+        { "id" : 168, "product_batch_id" : 168, "title" : "Chia em Grãos", "supplier" : "Monama", "description" : "200g", "original_price": 25.90, "initial_discount" : 0, "current_discount" : 0, "price" : 22.90, "quantity" : 0, "selected" : 0, "expiration" : ["16/07/2015"], "image" : "assets/images/168-chia-em-graos-200g-monama.jpg"},
+        { "id" : 181, "product_batch_id" : 181, "title" : "Alfarroba Tablete", "supplier" : "Carob House", "description" : "1 x 25g", "original_price" : 4.40, "initial_discount" : 0, "current_discount" : 0, "price" : 4, "quantity" : 0, "selected" : 0, "expiration" : ["16/06/2015"], "image" : "assets/images/181-Tablete-de-Alfarroba-25g.png" },
+        { "id" : 197, "product_batch_id" : 197, "title" : "Sopa Madá, Funghi", "supplier" : "Mãe Terra", "description" : "1 x 17g", "original_price" : 2.50, "initial_discount" : 0, "current_discount" : 0, "price" : 1.90, "quantity" : 0, "selected" : 0, "expiration" : ["15/03/2015"], "image" : "assets/images/197-sopa-mada-funghi-mae-terra.jpg" },
+        { "id" : 270, "product_batch_id" : 270, "title" : "Activeslim Beauty", "supplier" : "ActiveSlim", "description" : "20g", "original_price" : 9.90, "initial_discount" : 0, "current_discount" : 0, "price" : 6.50, "quantity" : 0, "selected" : 0, "expiration" : ["23/03/2015"], "image" : "assets/images/270-activeslim-beauty.jpg" },
+        { "id" : 278, "product_batch_id" : 278, "title" : "Biscoito Papa Ovo", "supplier" : "Mãe Terra", "description" : "200g", "original_price" : 9.90, "initial_discount" : 0, "current_discount" : 0, "price" : 6.80, "quantity" : 0, "selected" : 0, "expiration" : ["01/07/2015"], "image" : "assets/images/278-tratofit.jpg" },
+        { "id" : 285, "product_batch_id" : 285, "title" : "Detox Way Solúvel Natural 300g", "supplier" : "Nutraway", "description" : "1 x 300g", "original_price" : 44.90, "initial_discount" : 0, "current_discount" : 0, "price" : 37.90, "quantity" : 0, "selected" : 0, "expiration" : ["15/11/2014"], "image" : "assets/images/285-detox-way-soluvel-natural-300g-nutraway.jpg" },
+        { "id" : 319, "product_batch_id" : 319, "title" : "Sequilhos, Ameixa", "supplier" : "Sabor Alternativo", "description" : "1 x 150g", "original_price" : 6.20, "initial_discount" : 0, "current_discount" : 0, "price" : 5.10, "quantity" : 0, "selected" : 0, "expiration" : ["30/07/2015"], "image" : "assets/images/319-Biscoito-Leve-Crock-sem-Gluten-Sequilhos-de-Ameixa-150g.jpg" },
+        { "id" : 328, "product_batch_id" : 328, "title" : "Pistache Torrado e Salgado", "supplier" : "Agtal", "description" : "130g", "original_price" : 29.90, "initial_discount" : 0, "current_discount" : 0, "price" : 24.45, "quantity" : 0, "selected" : 0, "expiration" : ["15/12/2014"], "image" : "assets/images/328-pistache-com-casca-torrada-e-salgada-130g-agtal.jpg" },
+        { "id" : 357, "product_batch_id" : 357, "title" : "Biscoito champagne (Savoiardi)", "supplier" : "Schar", "description" : "150g", "original_price" : 21.90, "initial_discount" : 0, "current_discount" : 0, "price" : 14.90, "quantity" : 0, "selected" : 0, "expiration" : ["15/01/2015"], "image" : "assets/images/357-Savoiardi.jpg" },
+        { "id" : 360, "product_batch_id" : 360, "title" : "Tripack Barra de Cereal Ôrganica , Açaí, Amora e outros ingredientes", "supplier" : "Monama", "description" : "3 x 25g", "original_price" : 7.90, "initial_discount" : 0, "current_discount" : 0, "price" : "6.90", "quantity" : 0, "selected" : 0, "expiration" : ["01/01/2016"], "image" : "assets/images/360-tripack-barra-de-cereal-organica-acai-amora-e-goiaba-3-x-25g-monama.jpg" },
+        { "id" : 396, "product_batch_id" : 396, "title" : "Beauty Candy - Bala de Gelatina com Colágeno", "supplier" : "Beauty\"in", "description" : "150g", "original_price" : 49.90, "initial_discount" : 0, "current_discount" : 0, "price" : 29.90, "quantity" : 0, "selected" : 0, "expiration" : ["30/06/2015"], "image" : "assets/images/396-beauty-candy-morango-150g.jpg" }
+    ],
+
+    "category_product" : [
+        {"id" : 1, "product_id" : 27, "category_id" : [1]},
+        {"id" : 2, "product_id" : 73, "category_id" : [1]},
+        {"id" : 3, "product_id" : 73, "category_id" : [2]},
+        {"id" : 4, "product_id" : 100, "category_id" : [6]},
+        {"id" : 5, "product_id" : 106, "category_id" : [1]},
+        {"id" : 6, "product_id" : 137, "category_id" : [2]},
+        {"id" : 7, "product_id" : 141, "category_id" : [1]},
+        {"id" : 8, "product_id" : 163, "category_id" : [4]},
+        {"id" : 9, "product_id" : 166, "category_id" : [1]},
+        {"id" : 10, "product_id" : 168, "category_id" : [5]},
+        {"id" : 11, "product_id" : 181, "category_id" : [4]},
+        {"id" : 12, "product_id" : 197, "category_id" : [4]},
+        {"id" : 13, "product_id" : 270, "category_id" : [1]},
+        {"id" : 14, "product_id" : 278, "category_id" : [2]},
+        {"id" : 14, "product_id" : 285, "category_id" : [4]},
+        {"id" : 15, "product_id" : 319, "category_id" : [2]},
+        {"id" : 16, "product_id" : 328, "category_id" : [5]},
+        {"id" : 17, "product_id" : 357, "category_id" : [2]},
+        {"id" : 18, "product_id" : 360, "category_id" : [1]},
+        {"id" : 19, "product_id" : 396, "category_id" : [3]}
+    ],
+
+    "tag_product" : [
+        {"id" : 1, "product_id" : 27, "tag_id" : [1,3]},
+        {"id" : 2, "product_id" : 73, "tag_id" : [2,4]},
+        {"id" : 3, "product_id" : 75, "tag_id" : [1,2]},
+        {"id" : 4, "product_id" : 100, "tag_id" : [1,4]},
+        {"id" : 5, "product_id" : 106, "tag_id" : [1,2]},
+        {"id" : 6, "product_id" : 137, "tag_id" : [3,4]},
+        {"id" : 7, "product_id" : 141, "tag_id" : [2,3]},
+        {"id" : 8, "product_id" : 163, "tag_id" : [1,2,3]},
+        {"id" : 9, "product_id" : 166, "tag_id" : [3,4]},
+        {"id" : 10, "product_id" : 168, "tag_id" : [1,2,4]},
+        {"id" : 11, "product_id" : 181, "tag_id" : [1,3]},
+        {"id" : 12, "product_id" : 197, "tag_id" : [1,2]},
+        {"id" : 13, "product_id" : 270, "tag_id" : [1,3,4]},
+        {"id" : 14, "product_id" : 285, "tag_id" : [2,3]},
+        {"id" : 15, "product_id" : 278, "tag_id" : [2,3,4]},
+        {"id" : 16, "product_id" : 319, "tag_id" : [3,4]},
+        {"id" : 17, "product_id" : 328, "tag_id" : [3,4]},
+        {"id" : 18, "product_id" : 357, "tag_id" : [1,2,3]},
+        {"id" : 19, "product_id" : 360, "tag_id" : [1,2,4]},
+        {"id" : 20, "product_id" : 396, "tag_id" : [2,3,4]}
+    ],
+
+    "price_history" : [
+        {
+            "product_id" : 27,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 35.60, "pagapoco" : 30.60 },
+                { "month" : "2014-06-01", "general" : 35.30, "pagapoco" : 29.60 },
+                { "month" : "2014-07-01", "general" : 39.80, "pagapoco" : 28.30 },
+                { "month" : "2014-08-01", "general" : 32.50, "pagapoco" : 27.50 },
+                { "month" : "2014-09-01", "general" : 37.90, "pagapoco" : 25.50 }
+            ]
+        },
+        {
+            "product_id" : 73,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 50.60, "pagapoco" : 45.60 },
+                { "month" : "2014-06-01", "general" : 43.60, "pagapoco" : 43.60 },
+                { "month" : "2014-07-01", "general" : 52.80, "pagapoco" : 40.30 },
+                { "month" : "2014-08-01", "general" : 50.50, "pagapoco" : 37.50 },
+                { "month" : "2014-09-01", "general" : 43.60, "pagapoco" : 34.40 }
+            ]
+        },
+        {
+            "product_id" : 100,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 106,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 24.00, "pagapoco" : 21.60 },
+                { "month" : "2014-06-01", "general" : 23.50, "pagapoco" : 20.60 },
+                { "month" : "2014-07-01", "general" : 25.00, "pagapoco" : 18.30 },
+                { "month" : "2014-08-01", "general" : 21.40, "pagapoco" : 16.50 },
+                { "month" : "2014-09-01", "general" : 22.30, "pagapoco" : 15.90 }
+            ]
+        },
+        {
+            "product_id" : 137,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 141,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 163,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 168,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 270,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 278,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 328,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 357,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 360,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        },
+        {
+            "product_id" : 396,
+            "prices" : [
+                { "month" : "2014-05-01", "general" : 60.60, "pagapoco" : 59.60 },
+                { "month" : "2014-06-01", "general" : 53.60, "pagapoco" : 55.60 },
+                { "month" : "2014-07-01", "general" : 62.80, "pagapoco" : 50.30 },
+                { "month" : "2014-08-01", "general" : 53.50, "pagapoco" : 45.50 },
+                { "month" : "2014-09-01", "general" : 45.60, "pagapoco" : 24.50 }
+            ]
+        }
+    ]
+}

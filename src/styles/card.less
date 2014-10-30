@@ -1,0 +1,96 @@
+@cardsColor: #73557c;
+
+// CARD ANIMATIONS CSS BASED
+// #ref https://docs.angularjs.org/guide/animations
+
+// transition to add
+.css-class-add, .css-class-remove {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+// final applied css
+.css-class,
+.css-class-add.css-class-add-active {
+  background: red;
+}
+
+// transition to rmove
+.css-class-remove.css-class-remove-active {
+  font-size:1.0em;
+  color:black;
+}
+
+
+// Rest of card css configuration
+#cards-button{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 4px;
+}
+
+  #cards-button.active {
+}
+
+
+.cardsIcon{
+  background-color: @cardsColor!important;
+  background-image: url("/assets/icons/cards.png")!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: 25px!important;
+}
+
+
+
+material-button.cardsIcon:hover:not([disabled]), material-button.cardsIcon.focus{
+  .sizeTransition;
+  background:overlay(@cardsColor, #666)!important;
+  background-image: url("/assets/icons/cards.png")!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: 28px!important;
+}
+
+.cardsDiv{
+}
+
+#cardsTitle{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 11px;
+  margin-bottom: 2px;
+
+}
+
+#cardList{
+  list-style: none;
+}
+
+.cardWrapper{
+  margin-bottom: 3px;
+}
+
+  .card{
+      display: block;
+      width: 84%;
+      height: 116px;
+      border-radius: 10px;
+      background-image: url("/assets/icons/card1.png");
+      background-size: 100%;
+      background-repeat:no-repeat;
+  }
+
+  .cardSlot{
+    display: block;
+    width: 84%;
+    height: 116px;
+    border: 4px dotted white;
+    border-radius: 10px;
+  }
