@@ -27,3 +27,15 @@ This generator relies on several technologies, make sure your system has:
 *(HTML/CSS/JS/Images/etc)*
 
 To install dependencies, run `bower install --save package-name` to get the files, then add an entry into the [browser](generators/app/templates/_package.json#L41) key of your `package.json`.
+
+## Guidelines
+
+Para trabalhar na plataforma Onyx a seguinte metodologia deverá ser adota
+
+- Criar um Fork pessoal
+- Baixar este Fork na máquina local
+- Configurar o repositório central como Upstream
+  * Link do repositório central: https://github.com/onyxcorp/onyx
+- Pode trabalhar com a metodologia que preferir (criando branches, trabalhando diretamente no master, etc.)
+- Após modificações feitas solicitar um merge do Fork para o repositório Onyx central
+
